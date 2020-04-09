@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<extension key="st.visuali.finsburypark" type="module">
+  <file>finsburypark</file>
+  <name>Finsbury Park Theme</name>
+  <description>CiviCRM admin theme, with a Gitlab/Joomla-style UI. Currently tested on Drupal 7 (with Seven admin) and Joomla.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Nicol Wistreich</author>
+    <email>nic@visuali.st</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/vingle/st.visuali.finsburypark</url>
+    <url desc="Support">https://visuali.st</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2020-04-09</releaseDate>
+  <version>0.1</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Finsburypark</namespace>
+  </civix>
+</extension>
