@@ -2,15 +2,14 @@
 
 ![Screenshot](/images/screenshot.png)
 
-This is a work-in-progress theme for the CiviCRM backend admin interface. It has been tested on Drupal 7 and Joomla and is based on the [Shelford single-file theme](https://github.com/vingle/civicrm-shelford).
+This is a light-weight cross-CMS theme for the CiviCRM admin interface. 
+
+It aims to work across the D7, Wordpress and Joomla, and offer basic responsive support at under 120kb (excluding fonts & gifs). 
+
+It has been tested on Drupal 7, Wordpress and Joomla and is based on the [Shelford single-file theme](https://github.com/vingle/civicrm-shelford) for testing.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
-
-## Requirements
-
-* PHP v7.0+
-* CiviCRM (*FIXME: Version number*)
 
 ## Installation (Web UI)
 
@@ -43,6 +42,12 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 
 ## Known Issues
+
+Version 0.2 - added Wordpress support, merged css, basic responsiveness.
+- Uses colour variables so will not work on Internet Explorer (flag if this is an issue and fallbacks can be added)
+- .Woff versions of fonts used as the smallest - but ttf and otf versions are included. To further improve speed, change font-family to 'inherit' to use the theme fonts (FontAwesome is still needed)
+- Many sprites have been removed - animated gifs (loaders) are kept, as are a few sprites that are either hard to replace with FA (ie the select2 dropdown arrows), or whose use is unclear
+- More testing is needed, issues welcome.
 
 Version 0.1 
 - is a quick merge of the default civicrm.css and civicrm-shelford.css. This means some sprite paths may be broken and there are duplicate selectors.
