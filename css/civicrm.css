@@ -382,7 +382,7 @@ i.crm-i {
 #crm-container tr.columnheader-dark th, 
 #crm-container tr.columnheader td, 
 #crm-container tr.columnfooter td {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 }
 .crm-container tr {
 	background: none transparent;
@@ -1318,7 +1318,7 @@ input.crm-form-entityref {
 	font-weight: normal;
 	white-space: normal;
 	width: auto;
-	color: var(--v-dark-gray);
+	color: var(--vv-dark-gray);
 	line-height: inherit;
 	padding: 0;
 	margin: 0;
@@ -2979,7 +2979,7 @@ div.crm-master-accordion-header a.helpicon {
 	color: var(--red);
 }
 #crm-container .geotag {
-	background-image: none;
+	background-image: none !important;
 	text-indent: 0;
 }
 #crm-container .geotag:before {
@@ -3455,18 +3455,18 @@ div.crm-master-accordion-header a.helpicon {
 	visibility: hidden;
 }
 .crm-container div#alpha-filter {
-	background-color: var(--mid-gray);
-	margin: 15px 0 15px;
-	padding: 5px 10px 5px;
+	background-color: var(--mid-gray) !important;
+	margin: 15px 0 15px !important;
+	padding: 5px 10px 5px !important;
 	border-radius: 3px;
 }
 .crm-container #alpha-filter li {
-	font-weight: 600;
-	padding: 2px 5px 0;
-	font-size: 1rem;
+	font-weight: 600 !important;
+	padding: 2px 5px 0 !important;
+	font-size: 1rem !important;
 }
 .crm-container #alpha-filter a {
-	color: var(--vvv-dark-gray);
+	color: var(--vvv-dark-gray) !important;
 	border-color: var(--blue);
 }
 #crm-container #mainTabContainer {
@@ -4036,9 +4036,9 @@ div.crm-master-accordion-header a.helpicon {
 	background: transparent;
 }
 #crm-container div.crm-summary-row div.crm-content {
-    padding: 5px 10px;
+    padding: 5px 10px !important;
     float: left;
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 #crm-container div.crm-summary-row div.crm-label {
 	color: #444;
@@ -4417,7 +4417,7 @@ crm-container .ac_results {
 	font-weight: normal;
 }
 .crm-container .blockUI.blockOverlay {
-	background: url("../images/animated-overlay.gif") center center no-repeat white !important;
+	background: url("../images/loading-overlay.gif") center center no-repeat white !important;
 }
 .crm-container .ui-state-default,
 .crm-container .ui-widget-content .ui-state-default,
@@ -4962,6 +4962,9 @@ body.wp-admin .crm-container div.ui-notify-message.info div.icon {
 }
 body.wp-admin .wp-core-ui .button {
 	min-height: inherit !important;
+}
+body.wp-admin.toplevel_page_CiviCRM {
+	background: white;
 }
 @media (max-width: 768px) {
 	.wp-core-ui .button {
