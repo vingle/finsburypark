@@ -386,6 +386,7 @@ i.crm-i {
 }
 .crm-container tr {
 	background: none transparent;
+	border-bottom: 0 solid transparent;
 }
 .crm-container td {
 	padding: 4px;
@@ -4889,7 +4890,8 @@ span.crm-select-item-color {
 
 /* Drupal */
 
-body.admin-menu.page-civicrm #branding {
+body.admin-menu.page-civicrm #branding,
+body.path-civicrm header.content-header {
 	padding: 10px 20px 5px 20px;
 	position: relative;
 	background-color: var(--vv-light-gray);
