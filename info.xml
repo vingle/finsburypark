@@ -2,7 +2,7 @@
 <extension key="st.visuali.finsburypark" type="module">
   <file>finsburypark</file>
   <name>Finsbury Park Theme</name>
-  <description>Lightweight cross-CMS (D7, D8, Joomla & Wordpress) CiviCRM admin theme.</description>
+  <description>Lightweight cross-CMS CiviCRM admin theme.</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Nicol Wistreich</author>
