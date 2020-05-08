@@ -60,17 +60,16 @@
 	font-weight: normal;
 }
 :root {
-	--vvv-dark-gray: #3E3E3E;
+	--vvv-dark-gray: #3e3e3e;
 	--vv-dark-gray: #555;
 	--v-dark-gray: #888;
 	--dark-gray: #bbb;
 	--mid-gray: #ccc;
 	--light-gray: #dedede;
 	--v-light-gray: #e6e6e6;
-	--vv-light-gray: #F0F0F0;
-	--vvv-light-gray: #F9F9F9;
+	--vv-light-gray: #f0f0f0;
+	--vvv-light-gray: #f9f9f9;
 	--opaque-gray: rgba(0, 0, 0, 0.05);
-	--white: white;
 	--green: #58a458;
 	--light-green: #CFF0BE;
 	--blue: #24748c;
@@ -79,7 +78,8 @@
 	--red: #942a25;
 	--light-red: #ffdddd;
 	--gold: #c67605;
-	--yellow: #FFFFCC;
+	--yellow: #ffffcc;
+	--dark-yellow: #f8e80b;
 }
 
 /*
@@ -383,10 +383,10 @@ i.crm-i {
 #crm-container tr.columnheader td, 
 #crm-container tr.columnfooter td {
 	font-size: 0.9rem;
+	border-top: 0 solid transparent;
 }
 .crm-container tr {
 	background: none transparent;
-	border-bottom: 0 solid transparent;
 }
 .crm-container td {
 	padding: 4px;
@@ -1794,7 +1794,7 @@ input.crm-form-checkbox+label {
 	background-color: var(--yellow);
 }
 .crm-container ul.crm-checkbox-list li:nth-child(even) input:checked+label {
-	background-color: var(--gold)
+	background-color: white;
 }
 /*  Sortable lists */
 
@@ -2127,11 +2127,10 @@ input.crm-form-checkbox+label {
 /* Styles for Actions Ribbon */
 
 .crm-container .crm-actions-ribbon {
-    margin: 0 0 10px 0;
-}
-.page-civicrm-contact .crm-actions-ribbon,
-.task-civicrmcontactview .crm-actions-ribbon {
     margin: 0 0 10px 178px;
+}
+.crm-container .crm-actions-ribbon.crm-contribpage-tab-actions-ribbon {
+	margin: 0 0 10px 0;
 }
 #crm-container .crm-actions-ribbon ul {
 	margin: 0;
@@ -2412,6 +2411,11 @@ span.crm-status-icon {
 	margin-left: 3px;
 	position: relative;
 	top: 2px;
+}
+.crm-hover-button.soft-credit-delete-link .icon.delete-icon {
+    background: inherit;
+    border: inherit;
+    margin-left: 0;
 }
 .crm-container a.action-item {
 	display: inline;
@@ -3456,18 +3460,18 @@ div.crm-master-accordion-header a.helpicon {
 	visibility: hidden;
 }
 .crm-container div#alpha-filter {
-	background-color: var(--mid-gray) !important;
-	margin: 15px 0 15px !important;
-	padding: 5px 10px 5px !important;
+	background-color: var(--mid-gray);
+	margin: 15px 0 15px;
+	padding: 5px 10px 5px;
 	border-radius: 3px;
 }
 .crm-container #alpha-filter li {
-	font-weight: 600 !important;
-	padding: 2px 5px 0 !important;
-	font-size: 1rem !important;
+	font-weight: 600;
+	padding: 2px 5px 0;
+	font-size: 1rem;
 }
 .crm-container #alpha-filter a {
-	color: var(--vvv-dark-gray) !important;
+	color: var(--vvv-dark-gray);
 	border-color: var(--blue);
 }
 #crm-container #mainTabContainer {
@@ -3478,7 +3482,7 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .crm-tab-button a, 
 .crm-container .ui-tabs li a {
 	padding: 8px 10px;
-	line-height: 18px;
+	line-height: 23px;
 	border: 1px solid transparent;
 	border-radius: 4px 4px 0 0;
 	color: var(--vv-dark-gray);
@@ -4773,7 +4777,6 @@ span.crm-select-item-color {
 	height: auto !important;
 }
 .crm-container.ui-dialog .status {
-	margin: 0;
 	border-radius: 0;
 }
 .crm-container.ui-dialog.ui-resizable:before {
@@ -4904,6 +4907,52 @@ body.page-civicrm table th {
 	body.admin-menu {
 		margin: 0 -20px;
 	}
+}
+
+/* Drupal 8 */
+
+body.path-civicrm tbody tr:hover, 
+body.path-civicrm tbody tr:focus {
+    background: inherit;
+}
+body.path-civicrm #crm-container .crm-contact-page #mainTabContainer > .ui-tabs-panel {
+	margin-top: 1px;
+	margin-left: -1px;
+}
+body.path-civicrm .crm-container tr {	
+	border-bottom: 0 solid transparent;
+}
+body.path-civicrm .crm-container .crm-tab-button a, 
+body.path-civicrm .crm-container .ui-tabs li a {
+	border-radius: 4px 4px 0 0 !important;
+}
+body.path-civicrm .crm-container .crm-contact-tabs-list .crm-tab-button a, 
+body.path-civicrm .crm-container .crm-contact-tabs-list .ui-tabs li a {
+	border-radius: 4px 0 0 4px !important;
+}
+body.path-civicrm .crm-container .ui-tabs .ui-tabs-nav li {
+	padding: inherit !important;
+}
+body.path-civicrm .crm-container th > a::after {
+	border-bottom: 0 solid transparent;
+}
+body.path-civicrm .crm-container .panel {
+	padding: inherit;
+	border: inherit;
+	background: inherit;
+}
+body.path-civicrm.crm-menubar-below-cms-menu > #civicrm-menu-nav ul#civicrm-menu {
+    top: 39px;
+    border-top: 1px solid var(--dark-gray);
+}
+body.path-civicrm .crm-container .btn-slide-active .panel {
+	top: 23px;
+}
+body.path-civicrm .crm-container fieldset:not(.fieldgroup) > legend {
+	position: relative;
+	top: -10px;
+	font-size: 0.9rem;
+	letter-spacing: inherit;
 }
 
 /* Joomla */
