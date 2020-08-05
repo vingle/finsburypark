@@ -41,7 +41,11 @@ cv en finsburypark
 After installing the extension, select it via Nav menu > Administer > Customize Data and Screens > Display Preferences, and save.
 
 
-## Known Issues
+## Changelog / known issues
+
+Version 0.5 - updated for CiviCRM 5.27.4
+
+Version 0.4 - added Drupal 8 support
 
 Version 0.2 - added Wordpress support, merged css, basic responsiveness.
 - Uses colour variables so will not work on Internet Explorer (flag if this is an issue and fallbacks can be added)
