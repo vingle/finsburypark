@@ -29,6 +29,7 @@
 	- tab indented. no space between selectors.
 	- main headings over five lines, with single space either side
 	- sub-headings on one line, with single space either side
+	- use of !important is typically to override css from other files in the /css/ directory.
 */
 
 /*
@@ -1879,6 +1880,7 @@ input.crm-form-checkbox+label {
 .crm-container .replace-plain,
 .crm-container select.crm-form-multiselect {
 	border: 1px solid var(--v-dark-gray);
+	margin-bottom: 4px;
 }
 .crm-container .replace-plain {
 	cursor: pointer;
@@ -2096,7 +2098,8 @@ input.crm-form-checkbox+label {
 	margin: 4px;
 }
 #crm-container .crm-extensions-upgrade {
-    border: 1px solid var(--yellow);
+    background: var(--yellow);
+    border: 1px solid var(--dark-yellow) !important;
     margin: 5px 0 0 0;
     padding: 3px;
 }
@@ -2689,6 +2692,9 @@ span.crm-status-icon {
 	z-index: 1;
 	margin: -6px 0 0 -15px;
 }
+#crm-container button.crm-button.ng-binding i.crm-i {
+    margin: 0 6px 0 -15px;
+}
 #crm-container .crm-button.ng-binding i.crm-i {
 	margin: 0 6px 0 -10px;
 }
@@ -2696,12 +2702,11 @@ span.crm-status-icon {
 .crm-container .crm-button.crm-i-button input.crm-form-submit {
 	margin-top: -3px;
 	border: 0 solid transparent;
-	margin: -3px -10px 0 -10px;
+	margin: -3px -10px 0 -8px;
 	background: transparent !important;
-	color: var(--v-dark-gray);
-}
-.crm-container span.crm-button i.crm-i {
-	margin: -6px 6px 0px -6px;
+	color: var(--vvv-dark-gray);
+	padding: 0 2px 0 12px;
+	font-size: 0.9rem;
 }
 .crm-container span.crm-button {
     padding: 0 20px 0 15px;
@@ -3647,6 +3652,12 @@ div.crm-master-accordion-header a.helpicon {
 	border-top: 1px solid var(--light-gray);
 	padding: 8px 14px;
 } 
+
+/* Admin settings */
+
+#crm-container .admin-section-items {
+	margin-bottom: 15px
+}
 
 /* Search */
 
