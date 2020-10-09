@@ -43,6 +43,8 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 ## Changelog / known issues
 
+Version 0.6 - updated for CiviCRM 5.30.0
+
 Version 0.5 - updated for CiviCRM 5.27.4
 
 Version 0.4 - added Drupal 8 support
