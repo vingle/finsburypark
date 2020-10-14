@@ -772,7 +772,6 @@ table.dataTable.display tbody tr.even {
 	clear: both;
 	zoom: 1;
 	min-width: calc(100% - 30px);
-    overflow: scroll;
 }
 .crm-container .dataTables_processing {
 	position: absolute;
