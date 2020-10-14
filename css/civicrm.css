@@ -3160,6 +3160,23 @@ div.crm-master-accordion-header a.helpicon {
 	
 */
 
+.crm-container .collapsed .crm-accordion-header::before, 
+.crm-container .crm-collapsible.collapsed .collapsible-title::before, 
+.crm-container span.collapsed::before,
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before {
+    content: "\f0da";
+}
+.crm-container .crm-accordion-header::before, 
+.crm-container .crm-collapsible .collapsible-title::before, 
+.crm-container span.expanded::before, 
+.crm-container a.expanded::before, 
+.crm-container .crm-expand-row.expanded::before {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+}
+
+
 .crm-container .crm-accordion-header,
 .crm-container .crm-collapsible .collapsible-title,
 .crm-container span.collapsed,
@@ -3196,6 +3213,9 @@ div.crm-master-accordion-header a.helpicon {
 	background-image: none;
 	text-indent: 0;
 }
+.crm-container span.collapsed::before, 
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before,
 #crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
 #crm-container .widget-content .crm-accordion-header:before,
 .crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before,
@@ -3218,7 +3238,6 @@ div.crm-master-accordion-header a.helpicon {
 	margin: 2px 0 0 2px;
 	width: 1em;
 	display: inline-block;
-
 }
 .crm-container .collapsed .crm-accordion-body,
 .crm-container .crm-collapsible.collapsed .collapsible-title+* {
@@ -3235,6 +3254,9 @@ div.crm-master-accordion-header a.helpicon {
 	background-color: transparent;
 	color: var(--vvv-dark-gray);
 }
+.crm-container span.expanded::before, 
+.crm-container a.expanded::before, 
+.crm-container .crm-expand-row.expanded::before,
 #crm-container .widget-content .crm-accordion-header:before,
 .crm-container .crm-accordion-inner .crm-accordion-header:before, 
 .crm-container .crm-accordion-wrapper .crm-master-accordion-header:before, 
@@ -3242,6 +3264,9 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .crm-accordion-header:before {
 	content: "\f0d7";
 }
+.crm-container span.collapsed::before,
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before,
 #crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
 .crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before, 
 .crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header:before, 
