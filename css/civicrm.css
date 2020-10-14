@@ -491,6 +491,10 @@ table.dataTable.display tbody tr.even {
 #crm-container table th {
 	border-bottom: 1px solid var(--light-gray);
 }
+#crm-container .ui-tabs-panel table th {
+	border-bottom: 0 solid transparent;
+	text-transform: inherit;
+}
 .crm-container table.crm-info-panel .label {
 	color: var(--vvv-dark-gray);
 	font-weight: normal;
