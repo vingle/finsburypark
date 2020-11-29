@@ -26,8 +26,7 @@
 	
 	Notes
 	=====
-	- tab indented. no space between selectors.
-	- main headings over five lines, with single space either side
+	- tab indented. no space between selectors
 	- sub-headings on one line, with single space either side
 	- use of !important is typically to override css from other files in the /css/ directory.
 */
@@ -1488,9 +1487,6 @@ input.crm-form-checkbox+label {
 	padding-top: 6px;
 	margin-bottom: 28px;
 }
-.crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
-	margin: 12px 0 -24px 0;
-}
 .crm-container fieldset {
 	background: none;
 	padding: 0;
@@ -2690,11 +2686,11 @@ span.crm-status-icon {
 	text-shadow: none;
 	width: 28px;
 	line-height: 29px;
-}
+}/*
 #crm-container .crm-button i.crm-i {
 	z-index: 1;
-	margin: -6px 0 0 -15px;
-}
+	margin: -6px 0 0 -15px;*/
+}*/
 #crm-container button.crm-button.ng-binding i.crm-i {
     margin: 0 6px 0 -15px;
 }
@@ -5018,4 +5014,10 @@ body.wp-admin.toplevel_page_CiviCRM {
 	.wp-core-ui .button {
 		min-height: inherit !important;
 	}
+}
+
+/* Test */
+
+.crm-image-popup img {
+	width: 300px;
 }
