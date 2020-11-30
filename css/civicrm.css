@@ -2689,7 +2689,7 @@ span.crm-status-icon {
 }/*
 #crm-container .crm-button i.crm-i {
 	z-index: 1;
-	margin: -6px 0 0 -15px;*/
+	margin: -6px 0 0 -15px;
 }*/
 #crm-container button.crm-button.ng-binding i.crm-i {
     margin: 0 6px 0 -15px;
@@ -3156,23 +3156,6 @@ div.crm-master-accordion-header a.helpicon {
 	
 */
 
-.crm-container .collapsed .crm-accordion-header::before, 
-.crm-container .crm-collapsible.collapsed .collapsible-title::before, 
-.crm-container span.collapsed::before,
-.crm-container a.collapsed::before, 
-.crm-container .crm-expand-row::before {
-    content: "\f0da";
-}
-.crm-container .crm-accordion-header::before, 
-.crm-container .crm-collapsible .collapsible-title::before, 
-.crm-container span.expanded::before, 
-.crm-container a.expanded::before, 
-.crm-container .crm-expand-row.expanded::before {
-    font-family: "FontAwesome";
-    content: "\f0d7";
-}
-
-
 .crm-container .crm-accordion-header,
 .crm-container .crm-collapsible .collapsible-title,
 .crm-container span.collapsed,
@@ -3210,7 +3193,9 @@ div.crm-master-accordion-header a.helpicon {
 	text-indent: 0;
 }
 .crm-container span.collapsed::before, 
+.crm-container span.expanded::before, 
 .crm-container a.collapsed::before, 
+.crm-container a.expanded::before, 
 .crm-container .crm-expand-row::before,
 #crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
 #crm-container .widget-content .crm-accordion-header:before,
@@ -3235,6 +3220,26 @@ div.crm-master-accordion-header a.helpicon {
 	width: 1em;
 	display: inline-block;
 }
+.crm-container span.collapsed::before,
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before,
+#crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
+.crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before, 
+.crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header:before, 
+.crm-container .crm-collapsible.collapsed .collapsible-title:before,
+.crm-container .collapsed .crm-accordion-header:before {
+	content: "\f0da";		
+}
+.crm-container .crm-accordion-header::before, 
+.crm-container .crm-collapsible .collapsible-title::before, 
+.crm-container span.expanded::before, 
+.crm-container a.expanded::before, 
+.crm-container .crm-expand-row.expanded::before,
+#crm-container .widget-content .crm-accordion-header:before,
+.crm-container .crm-accordion-inner .crm-accordion-header:before, 
+.crm-container .crm-accordion-wrapper .crm-master-accordion-header:before {
+    content: "\f0d7";
+}
 .crm-container .collapsed .crm-accordion-body,
 .crm-container .crm-collapsible.collapsed .collapsible-title+* {
 	display: none;
@@ -3249,26 +3254,6 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .crm-collapsible .collapsible-title {
 	background-color: transparent;
 	color: var(--vvv-dark-gray);
-}
-.crm-container span.expanded::before, 
-.crm-container a.expanded::before, 
-.crm-container .crm-expand-row.expanded::before,
-#crm-container .widget-content .crm-accordion-header:before,
-.crm-container .crm-accordion-inner .crm-accordion-header:before, 
-.crm-container .crm-accordion-wrapper .crm-master-accordion-header:before, 
-.crm-container .crm-collapsible .collapsible-title:before,
-.crm-container .crm-accordion-header:before {
-	content: "\f0d7";
-}
-.crm-container span.collapsed::before,
-.crm-container a.collapsed::before, 
-.crm-container .crm-expand-row::before,
-#crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
-.crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before, 
-.crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header:before, 
-.crm-container .crm-collapsible.collapsed .collapsible-title:before,
-.crm-container .collapsed .crm-accordion-header:before {
-	content: "\f0da";		
 }
 .crm-container .crm-accordion-wrapper .crm-master-accordion-header {
 	font-size: 1rem;
@@ -4353,7 +4338,7 @@ crm-container .ac_results {
 }
 #crm-container.crm-public #premiums-listings .premium .premium-full .premium-full-title {
 	text-align: center;
-	font-size: 1.4fem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	padding: 20px;
 }
@@ -5014,10 +4999,4 @@ body.wp-admin.toplevel_page_CiviCRM {
 	.wp-core-ui .button {
 		min-height: inherit !important;
 	}
-}
-
-/* Test */
-
-.crm-image-popup img {
-	width: 300px;
 }
