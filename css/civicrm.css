@@ -2467,13 +2467,11 @@ span.crm-status-icon {
 }
 /* crm button style */
 
-.crm-container .action-link {
-    min-height: 30px;
-    margin: 20px 0 15px 0 !important;
-    overflow: inherit !important;
-}
+.crm-container .action-link,
 #crm-main-content-wrapper .crm-submit-buttons {
-	margin-bottom: 15px;
+    min-height: 30px;
+    margin: 15px 0 !important;
+    overflow: inherit !important;
 }
 .crm-container .CRM_Contact_Form_Task_Email .crm-submit-buttons,
 .crm-container .crm-form-block > .crm-submit-buttons,
