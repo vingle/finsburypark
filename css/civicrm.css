@@ -26,7 +26,8 @@
 	
 	Notes
 	=====
-	- tab indented. no space between selectors
+	- tab indented. no space between selectors.
+	- main headings over five lines, with single space either side
 	- sub-headings on one line, with single space either side
 	- use of !important is typically to override css from other files in the /css/ directory.
 */
@@ -1487,6 +1488,9 @@ input.crm-form-checkbox+label {
 	padding-top: 6px;
 	margin-bottom: 28px;
 }
+.crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
+	margin: 12px 0 -24px 0;
+}
 .crm-container fieldset {
 	background: none;
 	padding: 0;
@@ -2463,10 +2467,13 @@ span.crm-status-icon {
 }
 /* crm button style */
 
-.crm-container .crm-submit-buttons, .crm-container .action-link {
+.crm-container .action-link {
     min-height: 30px;
     margin: 20px 0 15px 0 !important;
     overflow: inherit !important;
+}
+#crm-main-content-wrapper .crm-submit-buttons {
+	margin-bottom: 15px;
 }
 .crm-container .CRM_Contact_Form_Task_Email .crm-submit-buttons,
 .crm-container .crm-form-block > .crm-submit-buttons,
@@ -2518,9 +2525,6 @@ span.crm-status-icon {
 	float: left;
 	overflow: hidden;
 	line-height: 135%;
-}
-.crm-container button.crm-button {
-	padding: 3px 6px;
 }
 .crm-container button.crm-button .icon {
 	margin-bottom: -4px;
@@ -2609,7 +2613,7 @@ span.crm-status-icon {
 	display: inline-block;
 	display: inline;
 	zoom: 1;
-	padding: 0 10px 0 15px;
+	padding: 0 10px 0 20px;
 	margin-bottom: 0;
 	font-size: 0.9rem;
 	text-align: center;
@@ -2658,9 +2662,6 @@ span.crm-status-icon {
 .crm-container span.crm-button-type-cancel {
 	float: right !important;
 }
-.crm-container button.crm-button {
-    padding: 0 10px;
-}
 
 /* Shelford button icons */
 
@@ -2681,16 +2682,16 @@ span.crm-status-icon {
 	border-right: 1px solid var(--dark-gray);
 	height: auto;
 	line-height: inherit;
-	margin: 0 6px 0 -15px;
+	margin: 0 6px 0 -20px;
 	opacity: 1;
 	text-shadow: none;
 	width: 28px;
 	line-height: 29px;
-}/*
+}
 #crm-container .crm-button i.crm-i {
 	z-index: 1;
-	margin: -6px 0 0 -15px;
-}*/
+	margin: 0 5px 0 -20px;
+}
 #crm-container button.crm-button.ng-binding i.crm-i {
     margin: 0 6px 0 -15px;
 }
@@ -3156,6 +3157,23 @@ div.crm-master-accordion-header a.helpicon {
 	
 */
 
+.crm-container .collapsed .crm-accordion-header::before, 
+.crm-container .crm-collapsible.collapsed .collapsible-title::before, 
+.crm-container span.collapsed::before,
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before {
+    content: "\f0da";
+}
+.crm-container .crm-accordion-header::before, 
+.crm-container .crm-collapsible .collapsible-title::before, 
+.crm-container span.expanded::before, 
+.crm-container a.expanded::before, 
+.crm-container .crm-expand-row.expanded::before {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+}
+
+
 .crm-container .crm-accordion-header,
 .crm-container .crm-collapsible .collapsible-title,
 .crm-container span.collapsed,
@@ -3193,9 +3211,7 @@ div.crm-master-accordion-header a.helpicon {
 	text-indent: 0;
 }
 .crm-container span.collapsed::before, 
-.crm-container span.expanded::before, 
 .crm-container a.collapsed::before, 
-.crm-container a.expanded::before, 
 .crm-container .crm-expand-row::before,
 #crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
 #crm-container .widget-content .crm-accordion-header:before,
@@ -3220,26 +3236,6 @@ div.crm-master-accordion-header a.helpicon {
 	width: 1em;
 	display: inline-block;
 }
-.crm-container span.collapsed::before,
-.crm-container a.collapsed::before, 
-.crm-container .crm-expand-row::before,
-#crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
-.crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before, 
-.crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header:before, 
-.crm-container .crm-collapsible.collapsed .collapsible-title:before,
-.crm-container .collapsed .crm-accordion-header:before {
-	content: "\f0da";		
-}
-.crm-container .crm-accordion-header::before, 
-.crm-container .crm-collapsible .collapsible-title::before, 
-.crm-container span.expanded::before, 
-.crm-container a.expanded::before, 
-.crm-container .crm-expand-row.expanded::before,
-#crm-container .widget-content .crm-accordion-header:before,
-.crm-container .crm-accordion-inner .crm-accordion-header:before, 
-.crm-container .crm-accordion-wrapper .crm-master-accordion-header:before {
-    content: "\f0d7";
-}
 .crm-container .collapsed .crm-accordion-body,
 .crm-container .crm-collapsible.collapsed .collapsible-title+* {
 	display: none;
@@ -3254,6 +3250,26 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .crm-collapsible .collapsible-title {
 	background-color: transparent;
 	color: var(--vvv-dark-gray);
+}
+.crm-container span.expanded::before, 
+.crm-container a.expanded::before, 
+.crm-container .crm-expand-row.expanded::before,
+#crm-container .widget-content .crm-accordion-header:before,
+.crm-container .crm-accordion-inner .crm-accordion-header:before, 
+.crm-container .crm-accordion-wrapper .crm-master-accordion-header:before, 
+.crm-container .crm-collapsible .collapsible-title:before,
+.crm-container .crm-accordion-header:before {
+	content: "\f0d7";
+}
+.crm-container span.collapsed::before,
+.crm-container a.collapsed::before, 
+.crm-container .crm-expand-row::before,
+#crm-container .widget-content .crm-accordion-wrapper.collapsed .crm-accordion-header:before,
+.crm-container .crm-accordion-inner.collapsed .crm-accordion-header:before, 
+.crm-container .crm-accordion-wrapper.collapsed .crm-master-accordion-header:before, 
+.crm-container .crm-collapsible.collapsed .collapsible-title:before,
+.crm-container .collapsed .crm-accordion-header:before {
+	content: "\f0da";		
 }
 .crm-container .crm-accordion-wrapper .crm-master-accordion-header {
 	font-size: 1rem;
@@ -4338,7 +4354,7 @@ crm-container .ac_results {
 }
 #crm-container.crm-public #premiums-listings .premium .premium-full .premium-full-title {
 	text-align: center;
-	font-size: 1.4rem;
+	font-size: 1.4fem;
 	font-weight: bold;
 	padding: 20px;
 }
