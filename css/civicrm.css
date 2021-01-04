@@ -4876,7 +4876,7 @@ span.crm-select-item-color {
 	
 */
 
-/* Drupal */
+/* Drupal 7 */
 
 body.admin-menu.page-civicrm #branding,
 body.path-civicrm header.content-header {
@@ -4940,6 +4940,7 @@ body.path-civicrm .crm-container fieldset:not(.fieldgroup) > legend {
 	letter-spacing: inherit;
 }
 
+
 /* Joomla */
 
 #crm-main-content-wrapper .row {
@@ -4970,6 +4971,9 @@ body.com_civicrm .crm-container div.ui-notify-message.info div.icon {
 body.com_civicrm .crm-container .collapse {
 	height: auto;
 }
+body.com_civicrm .crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
+    margin: 0 0 10px 0;
+}
 
 @media (max-width: 768px) {
 	body.admin.com_civicrm #sidebar-left {
@@ -4983,6 +4987,7 @@ body.com_civicrm .crm-container .collapse {
 		margin: 0 -20px;
 	}
 }
+
 /* Wordpress */
 
 body.wp-admin #crm-container {
@@ -5013,4 +5018,15 @@ body.wp-admin.toplevel_page_CiviCRM {
 	.wp-core-ui .button {
 		min-height: inherit !important;
 	}
+}
+
+/* Backdrop */
+
+html.admin-bar .crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
+	margin: 0 0 10px 0;
+}
+html.admin-bar  #crm-container .ui-state-default, 
+html.admin-bar #crm-container .ui-widget-content .ui-state-default, 
+html.admin-bar #crm-container .ui-widget-header .ui-state-default {
+	background: transparent;
 }
