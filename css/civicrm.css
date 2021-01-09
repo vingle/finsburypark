@@ -4594,7 +4594,7 @@ crm-container .ac_results {
 }
 .crm-container .select2-container .select2-choice > .select2-chosen {
 	padding: 1px 6px 1px 20px;
-	margin: 0 6px 6px 0;
+	margin: 0 6px 6px 6px;
 	box-shadow: none;
 	background-image: none;
 	background-color: white;
@@ -4610,6 +4610,7 @@ crm-container .ac_results {
 .crm-container .select2-search-choice-close {
 	top: 6px;
 	left: 5px;
+	padding: 0 !important;
 }
 .crm-container .select2-container .select2-choice abbr {
 	top: 9px;
