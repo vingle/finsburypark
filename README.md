@@ -43,6 +43,8 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 ## Changelog / known issues
 
+Version 0.9 - updated for version 5.33.2
+
 Version 0.8 - further button tidying
 
 Version 0.7 - updated for CiviCRM 5.31.0, fixed extension accordion bug.
