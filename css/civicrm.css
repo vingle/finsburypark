@@ -259,6 +259,9 @@ i.crm-i {
 #crm-container td.tasklist a:link {
     color: var(--red);
 }
+#crm-container .crm-draggable {
+	cursor: move;
+}
 
 /* Left/right */
 
@@ -2753,7 +2756,9 @@ i.fa-pencil {
 }
 .crm-container i.fa-check,
 .crm-container .fa-check::before,
-.crm-i.fa-envelope {
+.crm-i.fa-envelope,
+.crm-container button:hover >.crm-i.fa-plus,
+.crm-container button:focus >.crm-i.fa-plus {
 	color: var(--green);
 }
 .crm-container.ui-dialog .ui-dialog-title {
@@ -2881,6 +2886,10 @@ a.crm-i:hover {
 .crm-container .crm-button:hover .crm-i.fa-trash,
 .crm-container .crm-hover-button:hover .crm-i.fa-trash,
 .crm-container span:hover>.crm-i.fa-trash,
+.crm-container button:hover >.crm-i.fa-trash,
+.crm-container button:focus >.crm-i.fa-trash,
+.crm-container button:hover >.crm-i.fa-ban,
+.crm-container button:focus >.crm-i.fa-ban,
 .crm-i.crm-i-red,
 .crm-container .red-icon,
 .crm-container a:hover .icon.delete-icon,
@@ -2913,9 +2922,6 @@ a.crm-i:hover {
 	float: right;
 	font-size: 80%;
 }
-.crm-container .icon.delete-icon:before {
-	content: "\f1f8";
-}
 .crm-container a.helpicon {
 	opacity: .8;
 }
@@ -2929,9 +2935,7 @@ div.crm-accordion-header a.helpicon {
 div.crm-master-accordion-header a.helpicon {
 	color: var(--blue);
 }
-.crm-container a.helpicon:before,
-#crm-container .messages.status.no-popup:before,
-.crm-container.ui-dialog .messages.status.no-popup:before {
+.crm-container a.helpicon:before {
 	content: "\f059";
 }
 .crm-container div.ui-notify-message div.icon:before {
@@ -2970,13 +2974,6 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .Organization-subtype-icon:before {
 	content: "\f1ad";	
 	color: var(--light-green);
-}
-#crm-container .messages.status.no-popup .inform-icon {
-	display: none;
-}
-#crm-container .messages.status.no-popup:before {
-	content: "\f05e";	
-	color: var(--red);
 }
 .crm-container .Contribution-icon:before {
 	content: "\f09d";	
@@ -4527,9 +4524,6 @@ crm-container .ac_results {
 
 /* Angular */
 
-.crm-container .ng-scope {
-	margin: 10px 0;
-}
 .crm-container .crm-wizard-buttons .ng-scope {
 	margin: inherit;
 }
@@ -4543,9 +4537,7 @@ crm-container .ac_results {
 	border-radius: 0 4px 4px 4px;
 	margin-top: -3px;
 }
-.crm-container .ng-scope  li.ui-tabs-active a, 
-.crm-container .ng-scope  li a:hover, 
-.crm-container .ng-scope  li a:focus {
+.crm-container .ng-scope  li.ui-tabs-active a {
 	background: white !important;
 }
 .crm-container input.ng-invalid.ng-dirty,
