@@ -13,6 +13,23 @@ function finsburypark_civicrm_config(&$config) {
 }
 
 /**
+ * Implements hook_civicrm_alterBundle(). Add Bootstrap.
+ */
+
+function finsburypark_civicrm_alterBundle(CRM_Core_Resources_Bundle $bundle) {
+  $theme = Civi::service('themes')->getActiveThemeKey();
+  switch ($theme . ':' . $bundle->name) {
+    case 'finsburypark:bootstrap3':
+      $bundle->clear();
+      $bundle->addStyleFile('finsburypark', 'css/bootstrap3.css');
+      $bundle->addScriptFile('finsburypark', 'js/bootstrap.min.js', [
+        'translate' => FALSE,
+      ]);
+      break;
+  }
+}
+
+/**
  * Implements hook_civicrm_xmlMenu().
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_xmlMenu

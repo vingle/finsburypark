@@ -8,7 +8,7 @@
  */
 class CRM_Finsburypark_ExtensionUtil {
   const SHORT_NAME = "finsburypark";
-  const LONG_NAME = "st.visuali.finsburypark";
+  const LONG_NAME = "finsburypark";
   const CLASS_PREFIX = "CRM_Finsburypark";
 
   /**

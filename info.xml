@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<extension key="st.visuali.finsburypark" type="module">
+<extension key="finsburypark" type="module">
   <file>finsburypark</file>
   <name>Finsbury Park Theme</name>
   <description>Lightweight cross-CMS CiviCRM admin theme.</description>
@@ -13,8 +13,8 @@
     <url desc="Support">https://visuali.st</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
-  <releaseDate>2020-10-15</releaseDate>
-  <version>0.9</version>
+  <releaseDate>2021-01-28</releaseDate>
+  <version>0.10</version>
   <develStage>alpha</develStage>
   <compatibility>
     <ver>5.0</ver>
