@@ -67,6 +67,9 @@
 	box-shadow: none;
 }
 /* CRM search */
+#bootstrap-theme #crm-saved-search-label {
+	width: calc(100% - 15px);
+}
 #bootstrap-theme.crm-search .api4-clause-badge {
 	width: 90px;
 }
