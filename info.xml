@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<extension key="st.visuali.finsburypark" type="module">
+<extension key="finsburypark" type="module">
   <file>finsburypark</file>
   <name>Finsbury Park Theme</name>
   <description>Lightweight cross-CMS CiviCRM admin theme.</description>
