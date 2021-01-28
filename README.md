@@ -2,9 +2,9 @@
 
 ![Screenshot](/images/screenshot.png)
 
-This is a light-weight cross-CMS theme for the CiviCRM admin interface. 
+This is a small cross-CMS theme for the CiviCRM admin interface. 
 
-It aims to work across CMS with basic responsive support at under 120kb (excluding fonts & gifs). 
+The main css file aims to work across CMS with basic responsive support at under 125kb (excluding fonts & gifs & BootStrap). 
 
 It has been tested on Drupal 7, Drupal 8, Wordpress and Joomla and is based on the [Shelford single-file theme](https://github.com/vingle/civicrm-shelford) for testing.
 
@@ -42,6 +42,8 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 
 ## Changelog / known issues
+
+Version 0.10 - adds Bootstrap to everything, styles API4 Explorer & SearchKit
 
 Version 0.9 - updated for version 5.33.2
 
