@@ -1684,6 +1684,9 @@ input.crm-form-checkbox+label {
 	white-space: normal;
 	border: none;
 }
+#crm-container td.label {
+	display: revert;
+}
 #crm-container table.form-layout-compressed tr td {
    font-size: 14px;
    padding: 4px;
@@ -2114,8 +2117,7 @@ input.crm-form-checkbox+label {
 }
 #crm-container .civicrm-community-messages .collapsible-title {
     font-size: 18px;
-    font-weight: bold;
-	color: var(--vvv-dark-gray);
+   	color: var(--vvv-dark-gray);
 }
 #crm-container .civicrm-community-messages .collapsible-title > div {
 	display: inline;
@@ -2427,6 +2429,10 @@ span.crm-status-icon {
 .crm-container div div.crm-msg-loading div.icon {
 	background: transparent url("../images/loading.gif") no-repeat 0 0;
 }
+#crm-container .fa-spin {
+    background-color: transparent !important;
+    border-right: 0 solid transparent !important;
+}
 /*
 	
 	BUTTONS
@@ -2668,6 +2674,7 @@ span.crm-status-icon {
 #crm-container .crm-button input[type="submit"] {
 	border: 0 solid transparent;
     background: transparent;
+    padding: 0 10px;
 }
 #crm-container #_qf_Search_refresh,
 #crm-container #_qf_Builder_refresh {
