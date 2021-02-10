@@ -1684,6 +1684,9 @@ input.crm-form-checkbox+label {
 	white-space: normal;
 	border: none;
 }
+#crm-container td.label {
+	display: revert;
+}
 #crm-container table.form-layout-compressed tr td {
    font-size: 14px;
    padding: 4px;
@@ -2105,10 +2108,19 @@ input.crm-form-checkbox+label {
 .crm-container .crm-error {
 	padding: 4px;
 }
-.crm-container .status.crm-ok {
-	border-color: var(--green);
+.crm-container .status.crm-ok, 
+#crm-container div.civicrm-community-messages {	
+	border: 0 solid transparent;
 	background-color: var(--light-green);
 	color: var(--vvv-dark-gray);
+	border-radius: 4px; 
+}
+#crm-container .civicrm-community-messages .collapsible-title {
+    font-size: 18px;
+   	color: var(--vvv-dark-gray);
+}
+#crm-container .civicrm-community-messages .collapsible-title > div {
+	display: inline;
 }
 .crm-container .help,
 .crm-container #help,
@@ -2119,8 +2131,7 @@ input.crm-form-checkbox+label {
 	font-size: 0.9rem;
 }
 .crm-container .help, 
-.crm-container #help,
-.crm-container .status.crm-ok {
+.crm-container #help {
 	background-color: var(--light-green);	
 	border: 0 solid transparent;
 }
@@ -2259,6 +2270,9 @@ input.crm-form-checkbox+label {
 }
 .crm-container .crm-summary-group .crm-section .content {
     margin-left: 5px;
+}
+#crm-container .crm-section {
+	margin-bottom: 3px;
 }
 .crm-container .crm-tooltip table .crm-summary-col-1 {
 	width: 350px;
@@ -2414,6 +2428,10 @@ span.crm-status-icon {
 }
 .crm-container div div.crm-msg-loading div.icon {
 	background: transparent url("../images/loading.gif") no-repeat 0 0;
+}
+#crm-container .fa-spin {
+    background-color: transparent !important;
+    border-right: 0 solid transparent !important;
 }
 /*
 	
@@ -2634,8 +2652,7 @@ span.crm-status-icon {
 #crm-container input[type="submit"], 
 #crm-container input.form-submit-inline, 
 #crm-container .crm-button,
-.crm-container .ui-dialog-buttonset .ui-button,
-.crm-container .crm-hover-button {
+.crm-container .ui-dialog-buttonset .ui-button {
 	display: inline-block;
 	display: inline;
 	zoom: 1;
@@ -2657,6 +2674,7 @@ span.crm-status-icon {
 #crm-container .crm-button input[type="submit"] {
 	border: 0 solid transparent;
     background: transparent;
+    padding: 0 10px;
 }
 #crm-container #_qf_Search_refresh,
 #crm-container #_qf_Builder_refresh {
@@ -3701,6 +3719,28 @@ div.crm-master-accordion-header a.helpicon {
 .crm-container .crm-dashlet-header a {
 	color: inherit !important;
 }
+#crm-container .crm-inactive-dashlet-fieldset > legend {
+	height: auto;
+	border: 0 solid transparent;
+	padding: 0;
+	background-color: transparent;
+}
+#crm-container .crm-inactive-dashlet-fieldset > legend .crm-hover-button {
+	background-color: var(--vv-light-gray);
+	padding: 6px 14px;
+	border-radius: 3px;
+}
+#crm-container .crm-inactive-dashlet-fieldset > legend .crm-hover-button:hover,
+#crm-container .crm-inactive-dashlet-fieldset > legend .crm-hover-button:focus {
+	background-color: var(--light-gray);
+	color: var(--vvv-dark-gray);
+}
+#crm-container fieldset.crm-inactive-dashlet-fieldset > div {
+	background-color: transparent; 
+}
+#crm-container #civicrm-dashboard > .crm-flex-box {
+	margin: 0 -8px;
+}
 
 /* Admin settings */
 
@@ -4282,8 +4322,7 @@ crm-container .ac_results {
 	padding-top: 6px;
 	font-size: 0.9rem;
 }
-#crm-container.crm-public .crm-section,
-.crm-section {
+#crm-container.crm-public .crm-section {
 	margin-bottom: 0;
 }
 #crm-container.crm-public #crm-submit-buttons {

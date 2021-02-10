@@ -93,6 +93,9 @@
 	border-radius: 2px;
 	margin: 10px 0 0 0 !important;
 }
+#bootstrap-theme.crm-search fieldset fieldset fieldset {
+	background: var(--v-light-gray);
+}
 /* API explorer */
 #crm-container #bootstrap-theme.api4-explorer-page .explorer-params-panel .panel-heading button {
 	top: 0;
