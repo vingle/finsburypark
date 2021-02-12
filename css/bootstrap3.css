@@ -29,7 +29,9 @@
 }
 #bootstrap-theme .btn-default, 
 #bootstrap-theme .btn,
-#bootstrap-theme.crm-search .btn {
+#bootstrap-theme.crm-search .btn,
+#bootstrap-theme .btn-sm, 
+#bootstrap-theme .btn-group-sm > .btn  {
 	padding: 0 10px 0 20px;
 	background-color: var(--vvv-light-gray);
 	color: var(--vvv-dark-gray);
@@ -102,4 +104,168 @@
 }
 #bootstrap-theme.api4-explorer-page .explorer-params-panel .panel-heading {
 	padding-top: 9px;
+}
+/* Afform */
+
+#crm-container #bootstrap-theme .panel-body .form-control {
+	width: calc(100% - 18px);
+}
+#crm-container #afGuiEditor .nav-tabs > li {
+	margin-bottom: -2px;
+}
+#crm-container #bootstrap-theme .panel-default > .panel-heading {
+	color: var(--vv-dark-gray);
+	background-color: var(--vvv-light-gray);
+	border-bottom: 1px solid var(--light-gray);
+	padding-bottom: 1px;
+}
+#crm-container #bootstrap-theme .af-gui-add-element-button i.crm-i {
+	margin: 0;
+	width: inherit;
+	border-radius: 0;
+	border: 0 solid transparent;
+	background: transparent;
+	line-height: inherit;
+}
+#crm-container #afGuiEditor .af-gui-container {
+	padding: 28px 5px 5px;
+	box-shadow: none;
+	margin: 5px 0;
+	border: 1px dotted var(--light-gray);
+}
+#crm-container #afGuiEditor .nav-tabs {
+	border-bottom: 0 solid transparent;
+}
+#crm-container #afGuiEditor .af-gui-container:hover,
+#crm-container #afGuiEditor #afGuiEditor-canvas .af-entity-selected {
+    border: 1px dashed var(--blue);
+}
+#crm-container #afGuiEditor #afGuiEditor-canvas .af-entity-selected > .af-gui-bar {
+	background-color: var(--blue);
+}
+#crm-container #afGuiEditor .af-gui-bar,
+#crm-container #afGuiEditor .af-gui-edit-options-bar {
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: 0.9rem;
+	padding: 0 0 2px 5px;
+	width: calc(100% - 18px);
+}
+#crm-container #afGuiEditor .af-gui-edit-options-bar h4 {
+	margin: 2px 0 0 5px;
+	font-size: 0.9rem;
+}
+#crm-container #afGuiEditor .af-gui-edit-options-bar {
+	padding: 8px 8px 0 8px;
+	border: 1px solid var(--light-gray);
+	border-radius: 3px 3px 0 0;
+}
+#crm-container #afGuiEditor .af-gui-edit-options-bar .btn-group-sm {
+	top: 4px;
+	right: 4px;
+}
+#crm-container #afGuiEditor [ui-sortable] {
+	margin-top: 8px;
+}
+#crm-container #afGuiEditor .af-gui-entity-palette-select-list [ui-sortable] {
+	margin-top: 0;
+}
+#crm-container #afGuiEditor [ui-sortable] .af-gui-bar {
+	background-color: var(--vv-light-gray);
+	padding-left: 18px;
+	height: 28px;
+	text-transform: uppercase;
+	color: var(--vv-dark-gray);
+}
+#crm-container #afGuiEditor .af-gui-bar .form-inline {
+	padding-top: 2px;
+}
+#crm-container #afGuiEditor [ui-sortable] .af-gui-bar::before {
+	height: 22px;
+}
+#crm-container #afGuiEditor [ui-sortable] .af-gui-field .af-gui-bar::before {
+	height: 14px;
+}
+#crm-container #afGuiEditor [ui-sortable] .af-gui-field .af-gui-bar {
+	height: 18px;	
+} 
+#crm-container #afGuiEditor .af-gui-text-legend {
+	font-size: 1rem;
+	margin: -2px 0 0 15px;
+	padding-top: 5px;
+}
+#crm-container #afGuiEditor .af-gui-content-editing-area {
+	padding-top: 5px;
+}
+
+#crm-container #afGuiEditor .crm-editable-enabled:hover:not(:focus) {
+	border: 1px dashed var(--green);
+}
+#crm-container #afGuiEditor .af-gui-layout.af-layout-inline > div {
+	width: calc((100% / 3) - 12px);
+	margin-right: 10px;
+	border-radius: 3px;
+}
+/* Afform Buttons */
+#crm-container #afGuiEditor .btn.btn-xs {
+	line-height: inherit;
+	padding: 0;
+	border: 0 solid transparent;
+	box-shadow: none;
+}
+#crm-container #afGuiEditor button[type="submit"] {
+	padding: 0 10px 0 20px;
+	background: var(--vv-light-gray);
+	border: 1px solid var(--dark-gray);
+}
+#crm-container #afGuiEditor .af-gui-button > .btn.disabled {
+	background-color: var(--light-gray);
+	padding: 0px 10px 0 35px;
+	border: 1px solid var(--v-dark-gray);
+	color: var(--vv-dark-gray) !important;
+}
+#crm-container #afGuiEditor .af-gui-add-element-button span {
+	color: var(--v-dark-gray);
+}
+#crm-container #afGuiEditor .crm-editable-enabled, #afGuiEditor-palette-tabs > li > a > span {
+	padding: 0 !important;
+}
+#crm-container #afGuiEditor .crm-editable-enabled i {
+	height: 28px;
+	margin: 0 0 0 -40px;
+	border-right: 1px solid var(--v-dark-gray);
+}
+#crm-container #afGuiEditor .af-gui-field-input-type-chainselect .input-group .dropdown-toggle, 
+#crm-container #afGuiEditor .af-gui-field-input-type-select .input-group .dropdown-toggle,
+#crm-container #afGuiEditor .af-gui-field-input-type-chainselect .input-group .dropdown-toggle i, 
+#crm-container #afGuiEditor .af-gui-field-input-type-select .input-group .dropdown-toggle i {
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+#crm-container #afGuiEditor .af-gui-element {
+	background: white;
+	margin: 10px 0 5px;
+}
+#crm-container #afGuiEditor div.af-gui-markup-content {
+	padding: 20px !important;
+}
+#crm-container #afGuiEditor .af-gui-entity-palette-select-list {
+	padding: 5px;
+	background: var(--vvv-light-gray);
+	margin-top: 13px;
+	border: 1px solid var(--mid-gray);
+	border-radius: 0 0 3px 3px;
+}
+#crm-container #afGuiEditor .af-gui-entity-palette {
+	margin-left: 15px;
+}
+#crm-container #afGuiEditor .af-gui-entity-palette [type="search"] {
+	width: 100%;
+	border-radius: 3px 3px 0 0;
+	height: 28px;
+	margin-top: 6px;
+}
+#crm-container #afGuiEditor #afGuiEditor-palette-tabs li > a {
+	font-size: 0.9rem;
 }
