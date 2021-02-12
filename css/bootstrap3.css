@@ -28,8 +28,7 @@
 	padding: 0;
 }
 #bootstrap-theme .btn-default, 
-#bootstrap-theme .btn,
-#bootstrap-theme.crm-search .btn {
+#bootstrap-theme .btn {
 	padding: 0 10px 0 20px;
 	background-color: var(--vvv-light-gray);
 	color: var(--vvv-dark-gray);
