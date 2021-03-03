@@ -139,6 +139,9 @@ div.crm-container form {
 .crm-container .required {
 	color: inherit;
 }
+.crm-container #crm-main-content-wrapper {
+	margin-top: 10px;
+}
 #crm-container .widget-wrapper.db-hover-handle {
 	box-shadow: none;
 }
@@ -372,7 +375,6 @@ i.crm-i {
     border-radius: 3px 3px 0 0;
     border-color: transparent;
 }
-
 
 /*
 	
@@ -972,6 +974,12 @@ table.dataTable.no-footer {
 }
 .crm-container .crm-flex-box > .crm-flex-4 {
   flex: 4;
+}
+.crm-container .crm-flex-box > .crm-flex-5 {
+  flex: 5;
+}
+.crm-container .crm-flex-box > .crm-flex-6 {
+  flex: 6;
 }
 .crm-container .crm-button,
 .crm-container a.button,
@@ -2550,14 +2558,8 @@ span.crm-status-icon {
 .crm-container .ui-dialog-buttonset .ui-button,
 .crm-container input[type=button],
 .crm-container .crm-button {
-	text-shadow: 0 1px 0 black;
-	color: white;
 	font-weight: normal;
 	margin: 0 6px 0 0;
-	padding: 2px 6px;
-	text-decoration: none;
-	cursor: pointer;
-	border: 1px solid var(--vvv-dark-gray);
 }
 .crm-container a.button,
 .crm-container a.button:link,
@@ -2579,22 +2581,11 @@ span.crm-status-icon {
 .crm-container #task-section input.crm-form-submit {
 	margin: 0;
 }
-.crm-container .crm-button input[type=button],
 .crm-container .crm-button input.crm-form-submit {
 	padding: 0;
 	margin: 0;
 	background: none;
 	border: none;
-}
-.crm-container .crm-button:hover,
-.crm-container .crm-button:focus,
-.crm-container input[type=submit]:hover,
-.crm-container input[type=button]:hover,
-.crm-container .ui-dialog-buttonset .ui-button:hover,
-.crm-container .ui-dialog-buttonset .ui-button:focus,
-.crm-container a.button:hover,
-.crm-container a.button:focus {
-	background: var(--vvv-dark-gray);
 }
 .crm-container .crm-button-disabled,
 .crm-container .crm-button.crm-button-disabled,
@@ -2651,15 +2642,23 @@ span.crm-status-icon {
 #crm-container input[type="submit"], 
 #crm-container input.form-submit-inline, 
 #crm-container .crm-button,
-.crm-container .ui-dialog-buttonset .ui-button {
+.crm-container .ui-dialog-buttonset .ui-button,
+#bootstrap-theme .btn-default, 
+#bootstrap-theme .btn, 
+#bootstrap-theme.crm-search .btn, 
+#bootstrap-theme .btn-sm, 
+#bootstrap-theme .btn-group-sm > .btn,
+#bootstrap-theme .btn-primary,
+#crm-container #afGuiEditor button[type="submit"] {
 	display: inline-block;
 	display: inline;
 	zoom: 1;
-	padding: 0 10px 0 20px;
+	padding: 0 10px;
 	margin-bottom: 0;
 	font-size: 0.9rem;
 	text-align: center;
 	vertical-align: middle;
+	text-decoration: none;
 	cursor: pointer;
 	background: none;
 	background-color: var(--vvv-light-gray);
@@ -2688,8 +2687,12 @@ span.crm-status-icon {
 .crm-container input[type="submit"],
 #crm-container input.form-submit-inline:hover ,#crm-container input.form-submit-inline:focus, 
 #crm-container .crm-button:hover, #crm-container .crm-button:focus,
-.crm-container .ui-dialog-buttonset .ui-button:hover, .crm-container .ui-dialog-buttonset .ui-button:focus {
+.crm-container .ui-dialog-buttonset .ui-button:hover, .crm-container .ui-dialog-buttonset .ui-button:focus,
+#bootstrap-theme .btn:hover, #bootstrap-theme .btn:focus, #bootstrap-theme .btn.focus,
+#bootstrap-theme .btn-primary:hover {
 	background-color: var(--vv-light-gray);
+	border-color: 1px solid var(--v-dark-gray);
+	color: var(--vvv-dark-gray);
 }
 .crm-container .crm-button input[type="button"], 
 .crm-container .crm-button input.crm-form-submit {
@@ -2725,15 +2728,15 @@ span.crm-status-icon {
 	border-right: 1px solid var(--dark-gray);
 	height: auto;
 	line-height: inherit;
-	margin: 0 6px 0 -20px;
+	margin: 0 6px 0 -10px;
 	opacity: 1;
 	text-shadow: none;
-	width: 28px;
+	width: 30px;
 	line-height: 29px;
 }
 #crm-container .crm-button i.crm-i {
 	z-index: 1;
-	margin: 0 5px 0 -20px;
+	margin: 0 5px 0 -10px;
 }
 .crm-container .crm-button.crm-i-button input[type="button"], 
 .crm-container .crm-button.crm-i-button input.crm-form-submit {
@@ -3283,7 +3286,7 @@ div.crm-master-accordion-header a.helpicon {
 	color: var(--vvv-dark-gray);
 }
 .crm-container span.expanded::before, 
-.crm-container a.expanded::before, 
+#crm-container a.expanded::before, 
 .crm-container .crm-expand-row.expanded::before,
 #crm-container .widget-content .crm-accordion-header:before,
 .crm-container .crm-accordion-inner .crm-accordion-header:before, 
@@ -4855,12 +4858,18 @@ span.crm-select-item-color {
 	margin: 0px;
 	padding: 0px;
 }
-.crm-tag-item {
-	display: inline-block;
-	padding: 1px 5px;
-	border-radius: 3px;
-	border: 1px solid var(--vv-dark-gray);
+#crm-container .crm-tag-item {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 0 solid transparent;
 }
+#crm-container a.crm-tag-item {
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 0.9rem;
+}
+
 
 /*
 	
