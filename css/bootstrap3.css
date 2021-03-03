@@ -22,24 +22,11 @@
 #bootstrap-theme td, #bootstrap-theme th {
 	vertical-align: middle;
 	padding: 2px 0;
+    border-right: 0 solid transparent;
 }
 /* Buttons */
 #bootstrap-theme.crm-search .btn-xs {
 	padding: 0;
-}
-#bootstrap-theme .btn-default, 
-#bootstrap-theme .btn,
-#bootstrap-theme.crm-search .btn,
-#bootstrap-theme .btn-sm, 
-#bootstrap-theme .btn-group-sm > .btn  {
-	padding: 0 10px 0 20px;
-	background-color: var(--vvv-light-gray);
-	color: var(--vvv-dark-gray);
-	border: 1px solid var(--dark-gray);
-	font-size: 0.9rem;
-	text-shadow: none;
-	box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-	line-height: 28px;
 }
 #bootstrap-theme.crm-search td .btn {
 	padding: 0 10px;
@@ -55,11 +42,6 @@
 	font-size: 14px;
 	line-height: 28px;
 	border-radius: 3px;
-}
-#bootstrap-theme .btn:hover, #bootstrap-theme .btn:focus, #bootstrap-theme .btn.focus {
-	background-color: var(--vv-light-gray);
-	border-color: 1px solid var(--dark-gray);
-	color: var(--vvv-dark-gray);
 }
 #bootstrap-theme .crm-hover-button.ng-scope {
 	padding: 0 10px;
@@ -82,7 +64,7 @@
 	margin: 3px 0;
 }
 #bootstrap-theme.crm-search fieldset {
-	border: 1px solid lightgray;
+	border: 1px solid var(--light-gray);
 	margin: 10px 10px 10px 0 !important;
 	border-radius: 2px;
 	padding: 10px !important;
@@ -132,6 +114,9 @@
 	box-shadow: none;
 	margin: 5px 0;
 	border: 1px dotted var(--light-gray);
+}
+#crm-container #bootstrap-theme.afadmin-list > .form-inline {
+	padding: 20px 5px 10px;
 }
 #crm-container #afGuiEditor .nav-tabs {
 	border-bottom: 0 solid transparent;
@@ -212,11 +197,6 @@
 	padding: 0;
 	border: 0 solid transparent;
 	box-shadow: none;
-}
-#crm-container #afGuiEditor button[type="submit"] {
-	padding: 0 10px 0 20px;
-	background: var(--vv-light-gray);
-	border: 1px solid var(--dark-gray);
 }
 #crm-container #afGuiEditor .af-gui-button > .btn.disabled {
 	background-color: var(--light-gray);
