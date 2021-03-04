@@ -23,7 +23,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl st.visuali.finsburypark@https://github.com/vingle/st.visuali.finsburypark/archive/master.zip
+cv dl finsburypark@https://github.com/vingle/finsburypark/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -32,7 +32,7 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/vingle/st.visuali.finsburypark.git
+git clone https://github.com/vingle/finsburypark.git
 cv en finsburypark
 ```
 
