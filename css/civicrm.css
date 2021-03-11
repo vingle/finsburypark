@@ -1523,7 +1523,7 @@ input.crm-form-checkbox+label {
 	margin-bottom: 28px;
 }
 .crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
-	margin: 12px 0 -24px 0;
+	margin: 0 0 10px 0;
 }
 .crm-container fieldset {
 	background: none;
@@ -5043,9 +5043,6 @@ body.com_civicrm .crm-container div.ui-notify-message.info div.icon {
 body.com_civicrm .crm-container .collapse {
 	height: auto;
 }
-body.com_civicrm .crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
-    margin: 0 0 10px 0;
-}
 
 @media (max-width: 768px) {
 	body.admin.com_civicrm #sidebar-left {
@@ -5094,9 +5091,6 @@ body.wp-admin.toplevel_page_CiviCRM {
 
 /* Backdrop */
 
-html.admin-bar .crm-container #ContactName .crm-inline-edit-form div.crm-inline-button {
-	margin: 0 0 10px 0;
-}
 html.admin-bar  #crm-container .ui-state-default, 
 html.admin-bar #crm-container .ui-widget-content .ui-state-default, 
 html.admin-bar #crm-container .ui-widget-header .ui-state-default {
