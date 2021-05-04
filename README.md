@@ -43,6 +43,8 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 ## Changelog / known issues
 
+Version 0.12 - Better Cases/Reports handling. Fixes. Updated for v 5.36
+
 Version 0.11 - some fixes, styles Afform. Updated for version 5.35
 
 Version 0.10 - adds Bootstrap to everything, styles API4 Explorer & SearchKit
