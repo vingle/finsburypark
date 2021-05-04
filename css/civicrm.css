@@ -413,7 +413,7 @@ i.crm-i {
 .crm-container td {
 	padding: 4px;
 	vertical-align: top;
-    border-right: 1px dotted var(--dark-gray);
+	border-right: 1px dotted var(--dark-gray);
 }
 .crm-container .crm-row-child {
 	margin: 0;
@@ -490,7 +490,7 @@ table.dataTable.display tbody tr.even {
 	border-bottom: 1px solid var(--v-light-gray);
 }
 .crm-container thead {
-    border-bottom: 1px dotted var(--dark-gray);
+	border-bottom: 1px dotted var(--dark-gray);
 }
 .crm-container thead div.sticky-header {
 	height: 15px;
@@ -2470,13 +2470,13 @@ span.crm-status-icon {
 	bottom: 0 !important;
 }
 .crm-container a.crm-hover-button.action-item {
-    font-size: 0.9rem;
-    padding: 3px 5px;
-    background: var(--vv-light-gray);
-    border-radius: 4px;
-    margin: 0 4px 4px 0;
-    border: 1px solid var(--light-gray);
-    display: inline-block;
+	font-size: 0.9rem;
+	padding: 3px 5px;
+	background: var(--vv-light-gray);
+	border-radius: 4px;
+	margin: 0 4px 4px 0;
+	border: 1px solid var(--light-gray);
+	display: inline-block;
 }
 .crm-container ul.panel a.crm-hover-button.action-item {
 	background: inherit;
@@ -2494,8 +2494,8 @@ span.crm-status-icon {
 .crm-container a.crm-hover-button:hover,
 .crm-container a.crm-hover-button:active {
 	background: var(--v-light-gray);
-    border-color: var(--mid-gray);
-    color: black;
+	border-color: var(--mid-gray);
+	color: black;
 }
 .crm-container .crm-hover-button .icon {
 	cursor: pointer;
@@ -3723,8 +3723,8 @@ div.crm-master-accordion-header a.helpicon {
 	padding: 6px;
 }
 #crm-container .crm-dashlet {
-    box-shadow: none;
-    border: 1px solid var(--v-light-gray);
+	box-shadow: none;
+	border: 1px solid var(--v-light-gray);
 }
 #crm-container .widget-content h3,
 #crm-container .crm-dashlet-content h3 {
