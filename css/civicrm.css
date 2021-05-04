@@ -33,7 +33,6 @@
 */
 
 /*
-
 	FONTS & COLORS
 	
 */
@@ -130,7 +129,7 @@ div.crm-container form {
 	margin-bottom: 0;
 }
 #crm-container table th {
-	background: transparent;
+	background-color: transparent;
 }
 #crm-container,
 .crm-container {
@@ -398,7 +397,9 @@ i.crm-i {
 #crm-container tr.columnheader-dark td, 
 #crm-container tr.columnheader-dark th, 
 #crm-container tr.columnheader td, 
-#crm-container tr.columnfooter td {
+#crm-container tr.columnfooter td,
+.crm-container table.display thead th, 
+.crm-container tbody th {
 	font-size: 0.9rem;
 	border-top: 0 solid transparent;
 }
@@ -412,6 +413,7 @@ i.crm-i {
 .crm-container td {
 	padding: 4px;
 	vertical-align: top;
+    border-right: 1px dotted var(--dark-gray);
 }
 .crm-container .crm-row-child {
 	margin: 0;
@@ -486,6 +488,9 @@ table.dataTable.display tbody tr.even {
 .crm-container table thead.sticky {
 	background-color: transparent;
 	border-bottom: 1px solid var(--v-light-gray);
+}
+.crm-container thead {
+    border-bottom: 1px dotted var(--dark-gray);
 }
 .crm-container thead div.sticky-header {
 	height: 15px;
@@ -680,7 +685,7 @@ table.dataTable.display tbody tr.even {
 }
 #crm-container table.caseSelector td {
 	border-right: 0;
-	padding: 4px;
+	padding: 8px 4px;
 }
 #crm-container table.nestedActivitySelector {
 	margin: 0;
@@ -750,7 +755,7 @@ table.dataTable.display tbody tr.even {
 .crm-container table.row-highlight tr.even:hover,
 .crm-container .even-row.crm-row-selected,
 .crm-container .even.crm-row-selected {
-	background-color: var(--gold);
+	background-color: var(--dark-yellow);
 }
 .crm-container table.mergecontact thead th {
 	width: 30%;
@@ -1982,6 +1987,9 @@ input.crm-form-checkbox+label {
 .crm-container h2.crm-editable-enabled input {
 	min-height: 1.4em;
 }
+.crm-editable.crm-editable-enabled button {
+	padding: 0;
+}
 .crm-container .crm-editable-textarea-enabled textarea {
 	min-height: 5em;
 }
@@ -2462,8 +2470,17 @@ span.crm-status-icon {
 	bottom: 0 !important;
 }
 .crm-container a.crm-hover-button.action-item {
-	font-size: 0.8rem;
-	padding: 3px 5px;
+    font-size: 0.9rem;
+    padding: 3px 5px;
+    background: var(--vv-light-gray);
+    border-radius: 4px;
+    margin: 0 4px 4px 0;
+    border: 1px solid var(--light-gray);
+    display: inline-block;
+}
+.crm-container ul.panel a.crm-hover-button.action-item {
+	background: inherit;
+	border-color: inherit;
 }
 .crm-container .btn-slide .action-item {
 	white-space: normal;
@@ -2476,7 +2493,9 @@ span.crm-status-icon {
 .crm-container .crm-hover-button:hover,
 .crm-container a.crm-hover-button:hover,
 .crm-container a.crm-hover-button:active {
-	color: var(--blue);
+	background: var(--v-light-gray);
+    border-color: var(--mid-gray);
+    color: black;
 }
 .crm-container .crm-hover-button .icon {
 	cursor: pointer;
@@ -2519,11 +2538,13 @@ span.crm-status-icon {
 }
 /* crm button style */
 
-.crm-container .action-link,
 #crm-main-content-wrapper .crm-submit-buttons {
 	min-height: 30px;
 	margin: 15px 0 !important;
 	overflow: inherit !important;
+}
+#crm-ajax-dialog-0 .action-link {
+	margin: 15px 0;
 }
 .crm-container .CRM_Contact_Form_Task_Email .crm-submit-buttons,
 .crm-container .crm-form-block > .crm-submit-buttons,
@@ -3548,6 +3569,7 @@ div.crm-master-accordion-header a.helpicon {
 	background: var(--vvv-light-gray);
 	float: left;
 	margin-top: -2px;
+	margin-bottom: 20px;
 	width: calc(100% - 30px);
 }
 #crm-container .contact-summary-contribute-tab {
@@ -3700,6 +3722,10 @@ div.crm-master-accordion-header a.helpicon {
 #crm-container .widget-content table td {
 	padding: 6px;
 }
+#crm-container .crm-dashlet {
+    box-shadow: none;
+    border: 1px solid var(--v-light-gray);
+}
 #crm-container .widget-content h3,
 #crm-container .crm-dashlet-content h3 {
 	border-bottom: 1px solid var(--mid-gray);
@@ -3739,7 +3765,7 @@ div.crm-master-accordion-header a.helpicon {
 	background-color: transparent; 
 }
 #crm-container #civicrm-dashboard > .crm-flex-box {
-	margin: 0 -8px;
+	margin: 0;
 }
 
 /* Admin settings */
@@ -4023,10 +4049,10 @@ div.crm-master-accordion-header a.helpicon {
 	border: 0 solid transparent;
 	width: 50px;	
 }
-.crm-container .crm-report-field-form-block {
+#crm-container .crm-report-field-form-block {
 	background: transparent;
 	border: 0px solid transparent;
-	padding: 0;
+	padding: 10px;
 }
 #crm-container .crm-report-form-block {
 	padding: 15px;
