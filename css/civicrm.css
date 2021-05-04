@@ -1834,7 +1834,7 @@ input.crm-form-checkbox+label {
 	margin: 0;
 	padding: 0;
 }
-.crm-container ul.crm-checkbox-list li input {
+#crm-container ul.crm-checkbox-list li input {
 	position: absolute;
 	left: 5px;
 	top: 4px;
