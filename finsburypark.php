@@ -18,6 +18,10 @@ function finsburypark_civicrm_config(&$config) {
 
 function finsburypark_civicrm_alterBundle(CRM_Core_Resources_Bundle $bundle) {
   $theme = Civi::service('themes')->getActiveThemeKey();
+  if ($theme !== 'finsburypark') {
+    return;
+  }
+
   switch ($theme . ':' . $bundle->name) {
     case 'finsburypark:bootstrap3':
       $bundle->clear();
@@ -29,6 +33,19 @@ function finsburypark_civicrm_alterBundle(CRM_Core_Resources_Bundle $bundle) {
         'translate' => FALSE,
       ]);
       break;
+  }
+  if ($bundle->name == 'coreStyles') {
+    $bundle->filter(function($snippet) {
+      if ($snippet['name'] == 'civicrm:css/civicrm.css') {
+        $snippet['weight'] = 290;
+        return $snippet;
+      }
+      elseif (($snippet['name'] == 'civicrm::css/custom.css') or (strpos($snippet['name'], 'custom.css') !== false)) {
+        $snippet['weight'] = 300;
+        return $snippet;
+      }
+      return TRUE;
+    });
   }
 }
 
