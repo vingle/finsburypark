@@ -6,13 +6,6 @@ return array (
   'title' => 'Finsbury Park',
   'prefix' => NULL,
   'url_callback' => '\\Civi\\Core\\Themes\\Resolvers::simple',
-  'search_order' => 
-  array (
-    0 => 'finsburypark',
-    1 => '_fallback_',
-  ),
-  'excludes' => 
-  array (
-	  0 => 'css/bootstrap.css',
-  ),
+  'search_order' => ['finsburypark', '_fallback_'],
+  'excludes' => ['css/bootstrap.css'],
 );
