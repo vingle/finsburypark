@@ -2582,15 +2582,6 @@ span.crm-status-icon {
 	font-weight: normal;
 	margin: 0 6px 0 0;
 }
-.crm-container a.button,
-.crm-container a.button:link,
-.crm-container a.button:visited,
-.crm-container span.crm-button {
-	display: block;
-	float: left;
-	overflow: hidden;
-	line-height: 135%;
-}
 .crm-container button.crm-button .icon {
 	margin-bottom: -4px;
 }
@@ -2672,8 +2663,6 @@ span.crm-status-icon {
 #bootstrap-theme .btn-primary,
 #crm-container #afGuiEditor button[type="submit"] {
 	display: inline-block;
-	display: inline;
-	zoom: 1;
 	padding: 0 10px;
 	margin-bottom: 0;
 	font-size: 0.9rem;
