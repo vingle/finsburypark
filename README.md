@@ -43,7 +43,7 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 ## Changelog / known issues
 
-Version 0.12 - improved Cases/Reports handling. PHP7.4 (thanks @mmjwconsult). Updated for v5.37.1
+Version 0.12 - improved Cases/Reports handling. PHP7.4 (thanks @mjwconsult). Updated for v5.37.1
 
 Version 0.11 - some fixes, styles Afform. Updated for version 5.35
 
