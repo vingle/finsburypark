@@ -40,7 +40,7 @@ function finsburypark_civicrm_alterBundle(CRM_Core_Resources_Bundle $bundle) {
         $snippet['weight'] = 290;
         return $snippet;
       }
-      elseif (($snippet['name'] == 'civicrm::css/custom.css') or (strpos($snippet['name'], 'custom.css') !== false)) {
+      elseif (($snippet['name'] == 'civicrm:css/custom.css') or (strpos($snippet['name'], 'custom.css') !== false)) {
         $snippet['weight'] = 300;
         return $snippet;
       }
