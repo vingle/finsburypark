@@ -4832,13 +4832,13 @@ span.crm-select-item-color {
 	background-color: var(--light-gray);
 	border: 0 solid transparent;
 	border-radius: 4px 4px 0 0;
-	height: 35px;
+	min-height: 1.5rem;
 	border-bottom: 1px solid var(--mid-gray);
-	padding: 11px 49px 8px 15px;
+	padding: 0.5rem 1rem 0.25rem;
 }
 .crm-container.ui-dialog .ui-dialog-content {
 	border-radius: 0 0 3px 3px;
-	padding: 0.5rem !important;
+	padding: 1rem !important;
 	width: calc(100% - 1rem) !important;
 	height: auto !important;
 }
