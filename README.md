@@ -6,7 +6,7 @@ This is a small cross-CMS theme for the CiviCRM admin interface.
 
 The main css file aims to work across CMS with basic responsive support at under 125kb (excluding fonts & gifs & BootStrap). 
 
-It has been tested to work on Drupal 7, 8 & 9, WordPress, and Joomla 3.x.
+It has been tested to work on Drupal 7, 8 & 9, WordPress, and Joomla 3 & 4.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
