@@ -6,7 +6,7 @@ This is a small cross-CMS theme for the CiviCRM admin interface.
 
 The main css file aims to work across CMS with basic responsive support at under 125kb (excluding fonts & gifs & BootStrap). 
 
-It has been tested on Drupal 7, Drupal 8, Wordpress and Joomla and is based on the [Shelford single-file theme](https://github.com/vingle/civicrm-shelford) for testing.
+It has been tested to work on Drupal 7, 8 & 9, WordPress, and Joomla 3.x.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
@@ -42,6 +42,8 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 
 ## Changelog / known issues
+
+Version 0.13 - addresses cascade order (loads theme CSS after other Civi css) – thanks @aydun. Updated for 5.42.0
 
 Version 0.12 - improved Cases/Reports handling. PHP7.4 (thanks @mjwconsult). Updated for v5.37.1
 
