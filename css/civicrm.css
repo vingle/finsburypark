@@ -1566,6 +1566,11 @@ input.crm-form-checkbox+label {
 .crm-container fieldset.collapsible {
 	border: 0;
 }
+#crm-container .crm-inactive-dashlet-fieldset {
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+}
 .crm-container div.form-item {
 	border-top-style: none;
 	margin: 0;
