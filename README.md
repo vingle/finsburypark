@@ -43,7 +43,7 @@ After installing the extension, select it via Nav menu > Administer > Customize 
 
 ## Changelog / known issues
 
-Version 0.13 - addresses cascade order (loads theme CSS after other Civi css) – thanks @aydun. Updated for 5.42.0
+Version 0.13 - Drupal 9 & Joomla 4, addresses cascade order (loads theme CSS after other Civi css) – thanks @aydun. Tested against 5.42.
 
 Version 0.12 - improved Cases/Reports handling. PHP7.4 (thanks @mjwconsult). Updated for v5.37.1
 
