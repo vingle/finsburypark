@@ -1532,7 +1532,7 @@ input.crm-form-checkbox+label {
 }
 .crm-container fieldset {
 	background: none;
-	padding: 0;
+	padding: 0.5rem;
 	margin: 0;
 	border: none;
 	border-top: 1px solid var(--mid-gray);
@@ -4832,13 +4832,14 @@ span.crm-select-item-color {
 	background-color: var(--light-gray);
 	border: 0 solid transparent;
 	border-radius: 4px 4px 0 0;
-	height: 20px;
+	height: 35px;
 	border-bottom: 1px solid var(--mid-gray);
-	padding-top: 10px;
+	padding: 11px 49px 8px 15px;
 }
 .crm-container.ui-dialog .ui-dialog-content {
 	border-radius: 0 0 3px 3px;
-	width: calc(100% - 30px) !important;
+	padding: 0.5rem !important;
+	width: calc(100% - 1rem) !important;
 	height: auto !important;
 }
 .crm-container.ui-dialog .status {
