@@ -1,3 +1,5 @@
+# This repo is now being maintained here: https://lab.civicrm.org/extensions/finsburypark
+
 # "Finsbury Park" CiviCRM Admin theme
 
 ![Screenshot](/images/screenshot.png)
